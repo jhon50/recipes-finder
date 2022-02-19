@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <% @recipes.each do |recipe| %>
+      <div class="col-md-3 border">
+        <p><%= recipe.title %></p>
+
+        <% recipe.ingredients.each do |ingredient| %>
+          <p>- <%= ingredient %></p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

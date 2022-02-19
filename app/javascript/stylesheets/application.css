@@ -1,0 +1,8 @@
+/*.js-ingredients {*/
+/*    display: none;*/
+/*}*/
+.select2-selection.select2-selection--multiple {
+    min-width: 200px;
+    min-height: 400px;
+}
+
