@@ -4,7 +4,7 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :title
       t.integer :cook_time
       t.integer :prep_time
-      t.json :ingredients
+      t.jsonb :ingredients
       t.decimal :ratings, precision: 10, scale: 2
       t.string :cuisine
       t.string :category

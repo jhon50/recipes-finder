@@ -14,7 +14,7 @@ module Queries
 
       def ingredients_clause(ingredients)
         ingredients.each_with_index.map do |ingredient, index|
-          clause = "ingredients LIKE '%#{ingredient}%'"
+          clause = "ingredients::jsonb::text LIKE '%#{ingredient}%'"
           clause.concat(" #{OPERATOR} ") unless index == ingredients.size - 1
 
           clause
