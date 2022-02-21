@@ -1,24 +1,38 @@
-# README
+# Recipes Finder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Type your ingredients and the recipes will pop up.
 
-Things you may want to cover:
+Ruby Version: 3.0.3
+Rails Version: 6.1.4.6
 
-* Ruby version
+Features:
+* Seed recipes from json file
+* Load recipes via AJAX
+* Input with tag support
 
-* System dependencies
+### How to run
+```bash
+# install yarn dependencies
+yarn install
 
-* Configuration
+# install gems
+bundle install
 
-* Database creation
+# setup database
+bundle exec rake db:setup
 
-* Database initialization
+# run migrations
+bundle exec rake db:migrate
 
-* How to run the test suite
+# seed data
+bundle exec rake db:seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Heroku
+```bash
+https://quiet-stream-68426.herokuapp.com/
+```
 
-* Deployment instructions
-
-* ...
+## Future Improvements
+No specs were added due to not having enough time, focus was more on delivering and deploying to heroku.
+More filters could be added when searching for recipes.
